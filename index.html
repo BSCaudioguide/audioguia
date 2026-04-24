@@ -452,8 +452,9 @@
 <main class="page-body">
 
   <p class="section-eyebrow">Visita guiada</p>
-  <h1 class="section-title"><strong>Audioguía</strong><br>BSC-CNS</h1>
-  <p class="section-desc">Explora el Barcelona Supercomputing Center con nuestra guía de audio. Selecciona tu idioma para comenzar.</p>
+  <h1 class="section-title"><strong>Audioguía de la exposición</strong><br>Women in BSC:<br>Where Talent Inspires Talent</h1>
+  <br>
+  <p class="section-desc">Selecciona tu idioma para comenzar.</p>
 
   <div class="divider"></div>
 
@@ -461,23 +462,23 @@
 
   <div class="lang-selector">
     <button class="lang-btn" data-lang="es" onclick="selectLang(this)">
-      <span class="flag">🇪🇸</span>
+      <span class="flag">ES</span>
       <span class="lang-name">Español</span>
       <span class="lang-native">ES</span>
     </button>
     <button class="lang-btn" data-lang="en" onclick="selectLang(this)">
-      <span class="flag">🇬🇧</span>
+      <span class="flag">CA</span>
+      <span class="lang-name">Catalá</span>
+      <span class="lang-native">CA</span>
+    </button>
+    <button class="lang-btn" data-lang="fr" onclick="selectLang(this)">
+      <span class="flag">EN</span>
       <span class="lang-name">English</span>
       <span class="lang-native">EN</span>
     </button>
-    <button class="lang-btn" data-lang="fr" onclick="selectLang(this)">
-      <span class="flag">🇫🇷</span>
-      <span class="lang-name">Français</span>
-      <span class="lang-native">FR</span>
-    </button>
   </div>
 
-  <p class="select-prompt" id="select-prompt">↑ Selecciona un idioma para comenzar</p>
+  <p class="select-prompt" id="select-prompt">↑ Selecciona un idioma para comenzar · Select a languague to start</p>
 
   <div class="player-wrapper">
     <div class="player-card disabled" id="player-card">
@@ -485,7 +486,7 @@
       <div class="player-inner">
         <div class="track-info">
           <div class="track-title" id="track-title">—</div>
-          <div class="track-desc"  id="track-desc">Selecciona un idioma</div>
+          <div class="track-desc"  id="track-desc">Selecciona un idioma · Select language</div>
         </div>
 
         <div class="progress-bar-wrap" id="progress-wrap" onclick="seekAudio(event)">
@@ -546,17 +547,17 @@
 const TRACKS = {
   es: {
     title: "Audioguía en español",
-    desc:  "Visita guiada por el Barcelona Supercomputing Center",
+    desc:  "Women in BSC: Where Talent Inspires Talent",
     src:   "PEGA_AQUI_URL_AUDIO_ESPAÑOL.mp3"
   },
   en: {
-    title: "Audio guide in English",
-    desc:  "Guided tour of the Barcelona Supercomputing Center",
+    title: "Audioguia en català",
+    desc:  "Women in BSC: Where Talent Inspires Talent",
     src:   "PEGA_AQUI_URL_AUDIO_INGLES.mp3"
   },
   fr: {
-    title: "Audioguide en français",
-    desc:  "Visite guidée du Barcelona Supercomputing Center",
+    title: "Audioguide in English",
+    desc:  "Women in BSC: Where Talent Inspires Talent",
     src:   "PEGA_AQUI_URL_AUDIO_FRANCES.mp3"
   }
 };
