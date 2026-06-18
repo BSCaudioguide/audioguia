@@ -423,6 +423,31 @@
   }
   .footer-right a:hover { color: var(--bsc-accent); }
 
+  /* ── IMÁGENES INFERIORES ── */
+  .bottom-images {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 32px;
+    animation: fadeUp 0.5s 0.3s ease both;
+  }
+
+  .bottom-img-wrap {
+    flex: 1;
+    max-width: 220px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .bottom-img-wrap img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+  }
+
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -434,13 +459,8 @@
 <!-- HEADER BSC -->
 <header class="site-header">
   <div class="logo-area">
-    <!-- Logo BSC en SVG (recreado) -->
-    <svg class="logo-svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="44" height="44" rx="3" fill="#005596"/>
-      <!-- Letras BSC estilizadas -->
-      <text x="5" y="30" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="white" letter-spacing="-1">BSC</text>
-      <rect x="5" y="33" width="34" height="2" fill="#00AEEF"/>
-    </svg>
+    <!-- LOGO BSC: sustituye "logo-bsc.png" por el nombre real de tu archivo de logo -->
+    <img src="logo-bsc.png" alt="BSC" style="height:44px; width:auto; display:block;">
     <div class="logo-text-block">
       <div class="name">Barcelona Supercomputing Center</div>
       <div class="sub">Centro Nacional de Supercomputación</div>
@@ -529,6 +549,17 @@
         </svg>
       </div>
 
+    </div>
+  </div>
+  <!-- ── IMÁGENES INFERIORES ── -->
+  <div class="bottom-images">
+    <div class="bottom-img-wrap">
+      <!-- IMAGEN 1: sustituye "imagen1.jpg" por el nombre real de tu archivo -->
+      <img src="logo-ministerio.png" alt="Agencia Estatal de Investigación">
+    </div>
+    <div class="bottom-img-wrap">
+      <!-- IMAGEN 2: sustituye "imagen2.jpg" por el nombre real de tu archivo -->
+      <img src="SeveroOchoalogotipo-01.png" alt="Excelencia Severo Ochoa">
     </div>
   </div>
 
